@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4acacbe00cc5024dbde22d8f06c65ab, type: 3}
+  m_Name: Grace
+  m_EditorClassIdentifier: 
+  name: Grace
+  Likes: {fileID: 11400000, guid: de7f3aaed6edfbc4da448889b5abcc95, type: 2}
+  Dislikes: {fileID: 11400000, guid: 18eec17f9d6d9714d8a74d55eeb8a0b7, type: 2}
+  Good: {fileID: 11400000, guid: 3da8e95d06c829542895ac9a7795dbb4, type: 2}
+  Bad: {fileID: 11400000, guid: b96979bb5ffb8ba49abee90a6c314f02, type: 2}
+  energy: 100
