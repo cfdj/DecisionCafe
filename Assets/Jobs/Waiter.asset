@@ -17,3 +17,5 @@ MonoBehaviour:
   busynessChange: 4
   changeHour: 12
   waiting: 1
+  revenue: 0
+  description: Gets very busy at lunch time.

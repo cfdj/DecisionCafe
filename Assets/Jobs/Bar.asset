@@ -17,3 +17,5 @@ MonoBehaviour:
   busynessChange: 4
   changeHour: 15
   waiting: 0
+  revenue: 20
+  description: Quiet in the mornings, gets very busy after 15:00.

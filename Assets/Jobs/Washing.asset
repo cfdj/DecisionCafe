@@ -17,3 +17,5 @@ MonoBehaviour:
   busynessChange: 3
   changeHour: 14
   waiting: 0
+  revenue: 0
+  description: Becomes very busy washing up after lunch.

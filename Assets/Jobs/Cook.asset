@@ -17,3 +17,5 @@ MonoBehaviour:
   busynessChange: 2
   changeHour: 15
   waiting: 0
+  revenue: 25
+  description: Very busy preparing food during the morning, gets quieter after lunchtime.

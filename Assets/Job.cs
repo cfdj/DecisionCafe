@@ -10,4 +10,6 @@ public class Job : ScriptableObject
     public int busynessChange;
     public int changeHour;
     public bool waiting;
+    public int revenue;
+    public string description;
 }
