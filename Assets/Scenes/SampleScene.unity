@@ -238,11 +238,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3da8e95d06c829542895ac9a7795dbb4, type: 2}
   - {fileID: 11400000, guid: de7f3aaed6edfbc4da448889b5abcc95, type: 2}
   - {fileID: 11400000, guid: b96979bb5ffb8ba49abee90a6c314f02, type: 2}
+  display: {fileID: 0}
   allocation: {fileID: 1409529172}
   job1: {fileID: 2090997318}
   job2: {fileID: 1217049898}
   job3: {fileID: 2081093067}
   job4: {fileID: 1613876398}
+  nameDisplay: {fileID: 0}
+  likesDisplay: {fileID: 0}
+  dislikesDisplay: {fileID: 0}
+  goodDisplay: {fileID: 0}
+  badDisplay: {fileID: 0}
   hour: {fileID: 0}
   endScreen: {fileID: 0}
 --- !u!4 &340678658
@@ -586,7 +592,7 @@ GameObject:
   - component: {fileID: 1217049899}
   - component: {fileID: 1217049898}
   m_Layer: 5
-  m_Name: JobButton (1)
+  m_Name: Cook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1116,7 +1122,7 @@ GameObject:
   - component: {fileID: 1613876399}
   - component: {fileID: 1613876398}
   m_Layer: 5
-  m_Name: JobButton (3)
+  m_Name: Washing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,7 +1384,7 @@ GameObject:
   - component: {fileID: 2081093068}
   - component: {fileID: 2081093067}
   m_Layer: 5
-  m_Name: JobButton (2)
+  m_Name: Waiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1503,7 @@ GameObject:
   - component: {fileID: 2090997319}
   - component: {fileID: 2090997318}
   m_Layer: 5
-  m_Name: JobButton
+  m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1566,7 +1572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2090997319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340678657}
+        m_MethodName: jobSelect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 18eec17f9d6d9714d8a74d55eeb8a0b7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Job, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2090997319
 MonoBehaviour:
   m_ObjectHideFlags: 0

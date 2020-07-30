@@ -12,4 +12,5 @@ public class Job : ScriptableObject
     public bool waiting;
     public int revenue;
     public string description;
+    public List<Worker> assigned = new List<Worker>();
 }
