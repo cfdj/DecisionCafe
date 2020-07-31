@@ -98,6 +98,8 @@ public class GameControl : MonoBehaviour
 
     void Hour()
     {
+        allocation.gameObject.SetActive(false);
+        hour.gameObject.SetActive(true);
 
     }
 }
