@@ -19,3 +19,5 @@ MonoBehaviour:
   waiting: 0
   revenue: 20
   description: Quiet in the mornings, gets very busy after 15:00.
+  assigned:
+  - {fileID: 11400000, guid: 2b27e16a194ca724db7d8e2f7cfffde9, type: 2}

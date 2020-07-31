@@ -15,10 +15,10 @@ public class workerDisplay : MonoBehaviour
     public void SetWorker(Worker w)
     {
         worker = w;
-        nameDisplay.text = worker.name;
-        likesDisplay.text = worker.Likes.name;
-        dislikesDisplay.text = worker.Dislikes.name;
-        goodDisplay.text = worker.Good.name;
-        badDisplay.text = worker.Bad.name;
+        nameDisplay.text ="Name: "+ worker.name;
+        likesDisplay.text = "Likes: " + worker.Likes.name;
+        dislikesDisplay.text = "Dislikes: " + worker.Dislikes.name;
+        goodDisplay.text = "Good at: " + worker.Good.name;
+        badDisplay.text = "Bad at: " + worker.Bad.name;
     }
 }

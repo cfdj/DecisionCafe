@@ -19,3 +19,4 @@ MonoBehaviour:
   waiting: 1
   revenue: 0
   description: Gets very busy at lunch time.
+  assigned: []

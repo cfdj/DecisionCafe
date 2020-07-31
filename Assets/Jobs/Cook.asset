@@ -19,3 +19,4 @@ MonoBehaviour:
   waiting: 0
   revenue: 25
   description: Very busy preparing food during the morning, gets quieter after lunchtime.
+  assigned: []
