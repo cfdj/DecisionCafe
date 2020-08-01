@@ -88,6 +88,7 @@ public class GameControl : MonoBehaviour
         if (j.assigned.Count < 4)
         {
             j.assigned.Add(workers[workerNum]);
+            workers[workerNum].assigned = j;
             int index = jobs.IndexOf(j);
             Debug.Log("Job num: " + index + " Assign num: " + j.assigned.Count);
             icons[index][j.assigned.Count - 1].gameObject.SetActive(true);
