@@ -98,6 +98,7 @@ public class GameControl : MonoBehaviour
 
     void Hour()
     {
+        display.gameObject.SetActive(false);
         allocation.gameObject.SetActive(false);
         hour.gameObject.SetActive(true);
 

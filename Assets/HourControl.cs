@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class HourControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Canvas canvas;
+    public List<workerUI> workerUIs;
 
-    // Update is called once per frame
-    void Update()
+
+    public void BreakSelected(Worker w)
     {
-        
+
     }
 }

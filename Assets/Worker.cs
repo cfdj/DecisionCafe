@@ -10,5 +10,8 @@ public class Worker : ScriptableObject
     public Job Dislikes;
     public Job Good;
     public Job Bad;
-    public int energy;
+    public int Energy;
+    public int Happiness;
+    private int maxEnergy = 100;
+    private int maxHappiness = 10;
 }

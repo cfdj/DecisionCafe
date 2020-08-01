@@ -17,4 +17,5 @@ MonoBehaviour:
   Dislikes: {fileID: 11400000, guid: de7f3aaed6edfbc4da448889b5abcc95, type: 2}
   Good: {fileID: 11400000, guid: de7f3aaed6edfbc4da448889b5abcc95, type: 2}
   Bad: {fileID: 11400000, guid: 18eec17f9d6d9714d8a74d55eeb8a0b7, type: 2}
-  energy: 100
+  Energy: 100
+  Happiness: 5
