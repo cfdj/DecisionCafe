@@ -8,6 +8,7 @@ public class HourControl : MonoBehaviour
     public Canvas canvas;
     public Text profitDisplay;
     public List<workerUI> workerUIs;
+    public List<jobUI> jobUIs;
     public List<Job> jobs;
     public int revenueTotal;
     public int wages;
@@ -33,6 +34,18 @@ public class HourControl : MonoBehaviour
                     revenueTotal += j.revenue / 2;
                 }
             }
+        }
+        profitDisplay.text = "Revenue: " + revenueTotal;
+    }
+    public void updateDisplay()
+    {
+        foreach(workerUI w in workerUIs)
+        {
+            w.updateDisplay();
+        }
+        foreach(jobUI j in jobUIs)
+        {
+
         }
     }
 }

@@ -27,7 +27,7 @@ public class GameControl : MonoBehaviour
     public Text badDisplay;
 
     public Canvas hour;
-
+    public HourControl hourControl;
 
     public Canvas endScreen;
 
@@ -102,6 +102,6 @@ public class GameControl : MonoBehaviour
         display.gameObject.SetActive(false);
         allocation.gameObject.SetActive(false);
         hour.gameObject.SetActive(true);
-
+        hourControl.updateDisplay();
     }
 }
