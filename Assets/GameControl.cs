@@ -7,6 +7,7 @@ public class GameControl : MonoBehaviour
 {
     [SerializeField] List<Worker> workers;
     [SerializeField] List<Job> jobs;
+    [SerializeField] Job off;
     [SerializeField] workerDisplay display;
 
     public Canvas allocation;
@@ -32,13 +33,18 @@ public class GameControl : MonoBehaviour
     public Canvas endScreen;
 
     private int workerNum = 0;
-
+    private int energy = 10;
+    private int happiness = 5;
     // Start is called before the first frame update
     void Start()
     {
         foreach(Job j in jobs)
         {
             j.assigned = new List<Worker>();
+        }
+        foreach(Worker w in workers)
+        {
+            w.Reset(energy, happiness);
         }
         icons = new List<List<Image>>();
         icons.Add(icons1);
@@ -96,7 +102,14 @@ public class GameControl : MonoBehaviour
             Assign();
         }
     }
-
+    public void dayOff()
+    {
+        Debug.Log("Given day off");
+        off.assigned.Add(workers[workerNum]);
+        workers[workerNum].assigned = off;
+        workerNum += 1;
+        Assign();
+    }
     void Hour()
     {
         display.gameObject.SetActive(false);

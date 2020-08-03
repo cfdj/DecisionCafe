@@ -7,6 +7,7 @@ public class workerUI : MonoBehaviour
 {
     [SerializeField] int energyRecovery;
     [SerializeField] int happinessRecovery;
+    [SerializeField] Job off;
     public Worker worker;
     public Text nameDisplay;
     public Text energyDisplay;
@@ -20,6 +21,11 @@ public class workerUI : MonoBehaviour
         nameDisplay.text = worker.name;
         energyDisplay.text = "Energy: " + worker.Energy;
         happyDisplay.text = "Happiness:" + worker.Happiness;
+        if(worker.assigned == off)
+        {
+            happyDisplay.text = "";
+            energyDisplay.text = "Has been given the day off";
+        }
     }
 
     public void hourUpdate(int difficulty) //difficulty has a minimum value of 1

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5faa1750986e84f41acd59ce90ffb86b, type: 3}
+  m_Name: NotAssigned
+  m_EditorClassIdentifier: 
+  name: Not Assigned
+  busyness: 0
+  busynessChange: 0
+  changeHour: 0
+  waiting: 0
+  revenue: 0
+  description: Day off
+  assigned: []

@@ -11,9 +11,16 @@ public class Worker : ScriptableObject
     public Job Good;
     public Job Bad;
     public Job assigned;
-    public int Energy =100;
-    public int Happiness = 5;
+    public int Energy;
+    public int Happiness;
     public bool onbreak = false;
     public readonly int maxEnergy = 100;
     public readonly int maxHappiness = 10;
+
+    public void Reset(int e, int h)
+    {
+        Energy = e;
+        Happiness = h;
+        onbreak = false;
+    }
 }

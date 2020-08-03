@@ -15,7 +15,7 @@ public class HourControl : MonoBehaviour
     public int revenueTotal;
     public int wages;
     public int profits;
-    int curTime;
+    int curTime = 9;
     public void BreakSelected()
     {
         int difficulty = 0;
@@ -40,7 +40,7 @@ public class HourControl : MonoBehaviour
         }
         profitDisplay.text = "Revenue: " + revenueTotal;
         curTime += 1;
-        if (curTime >= 17)
+        if (curTime > 17)
         {
             end();
         }
