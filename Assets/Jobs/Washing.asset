@@ -17,5 +17,8 @@ MonoBehaviour:
   busynessChange: 3
   changeHour: 14
   waiting: 0
-  revenue: 0
+  revenue: 20
   description: Becomes very busy washing up after lunch.
+  assigned:
+  - {fileID: 11400000, guid: c7213b6127cc0214e850b0c54321cbe9, type: 2}
+  - {fileID: 11400000, guid: a12c393ecd7701544a3b8eb215c5129f, type: 2}

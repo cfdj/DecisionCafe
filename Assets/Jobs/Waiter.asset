@@ -17,6 +17,7 @@ MonoBehaviour:
   busynessChange: 4
   changeHour: 12
   waiting: 1
-  revenue: 0
+  revenue: 20
   description: Gets very busy at lunch time.
-  assigned: []
+  assigned:
+  - {fileID: 11400000, guid: 2b27e16a194ca724db7d8e2f7cfffde9, type: 2}

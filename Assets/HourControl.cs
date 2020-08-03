@@ -7,13 +7,16 @@ public class HourControl : MonoBehaviour
 {
     public Canvas canvas;
     public Text profitDisplay;
+    public Text hourDisplay;
+    public Canvas endCanvas;
     public List<workerUI> workerUIs;
     public List<jobUI> jobUIs;
     public List<Job> jobs;
     public int revenueTotal;
     public int wages;
     public int profits;
-    public void BreakSelected(Worker w)
+    int curTime;
+    public void BreakSelected()
     {
         int difficulty = 0;
         foreach(workerUI wui in workerUIs)
@@ -36,6 +39,20 @@ public class HourControl : MonoBehaviour
             }
         }
         profitDisplay.text = "Revenue: " + revenueTotal;
+        curTime += 1;
+        if (curTime >= 17)
+        {
+            end();
+        }
+        else
+        {
+            updateDisplay();
+        }
+    }
+    public void end()
+    {
+        canvas.gameObject.SetActive(false);
+        endCanvas.gameObject.SetActive(true);
     }
     public void updateDisplay()
     {
@@ -45,7 +62,8 @@ public class HourControl : MonoBehaviour
         }
         foreach(jobUI j in jobUIs)
         {
-
+            j.updateDisplay();
         }
+        hourDisplay.text = "Time: " + curTime + ":00";
     }
 }

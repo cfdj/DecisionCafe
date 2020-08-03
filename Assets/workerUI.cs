@@ -60,6 +60,6 @@ public class workerUI : MonoBehaviour
         worker.onbreak = true;
         worker.Energy += energyRecovery;
         worker.Happiness += happinessRecovery;
-        hourControl.BreakSelected(worker);
+        hourControl.BreakSelected();
     }
 }
