@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bar
   initialbusyness: 1
-  busyness: 4
-  busynessChange: 4
+  busyness: 5
+  busynessChange: 5
   changeHour: 15
   revenue: 20
   description: Quiet in the mornings, gets very busy after 15:00.
   assigned:
-  - {fileID: 11400000, guid: d826c68ac4b541b4ba9bfa3418adf7b0, type: 2}
+  - {fileID: 11400000, guid: a12c393ecd7701544a3b8eb215c5129f, type: 2}
