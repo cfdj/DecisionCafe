@@ -9,6 +9,7 @@ public class HourControl : MonoBehaviour
     public Text profitDisplay;
     public Text hourDisplay;
     public Canvas endCanvas;
+    public EndControl endControl;
     public List<workerUI> workerUIs;
     public List<jobUI> jobUIs;
     public List<Job> jobs;
@@ -46,13 +47,26 @@ public class HourControl : MonoBehaviour
         }
         else
         {
+            updateJobs();
             updateDisplay();
+        }
+    }
+
+    public void updateJobs()
+    {
+        foreach(Job j in jobs)
+        {
+            if(j.changeHour == curTime)
+            {
+                j.busyness = j.busynessChange;
+            }
         }
     }
     public void end()
     {
         canvas.gameObject.SetActive(false);
         endCanvas.gameObject.SetActive(true);
+        endControl.End(revenueTotal, wages);
     }
     public void updateDisplay()
     {
