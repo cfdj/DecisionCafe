@@ -59,7 +59,7 @@ public class HourControl : MonoBehaviour
             if(j.changeHour == curTime)
             {
                 j.busyness = j.busynessChange;
-            }
+            } 
         }
     }
     public void end()

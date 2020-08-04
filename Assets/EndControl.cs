@@ -28,7 +28,7 @@ public class EndControl : MonoBehaviour
                 happiness += w.Happiness;
             }
         }
-        wageTotal = wages;
+        wageTotal = wages*numWorking;
         revenueTotal = revenue;
         profit = revenue - wages * numWorking;
         updateDisplay();

@@ -14,7 +14,7 @@ public class Worker : ScriptableObject
     public int Energy;
     public int Happiness;
     public bool onbreak = false;
-    public readonly int maxEnergy = 100;
+    public readonly int maxEnergy = 10;
     public readonly int maxHappiness = 10;
 
     public void Reset(int e, int h)

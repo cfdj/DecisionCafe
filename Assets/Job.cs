@@ -6,14 +6,19 @@ using UnityEngine;
 public class Job : ScriptableObject
 {
     public new string name;
+    [SerializeField] int initialbusyness;
     public int busyness;
     public int busynessChange;
     public int changeHour;
-    public bool waiting;
     public int revenue;
     public string description;
     public List<Worker> assigned = new List<Worker>();
-
+    
+    public void reset()
+    {
+        busyness = initialbusyness;
+        assigned = new List<Worker>();
+    }
     public bool assignedCheck(Worker w)
     {
         return assigned.Contains(w);

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Waiter
   m_EditorClassIdentifier: 
   name: Waiter
-  busyness: 2
+  initialbusyness: 2
+  busyness: 4
   busynessChange: 4
   changeHour: 12
-  waiting: 1
   revenue: 20
   description: Gets very busy at lunch time.
   assigned:
-  - {fileID: 11400000, guid: 2b27e16a194ca724db7d8e2f7cfffde9, type: 2}
+  - {fileID: 11400000, guid: c7213b6127cc0214e850b0c54321cbe9, type: 2}
+  - {fileID: 11400000, guid: 9a54e574d953aea41a3c38c75f6b0969, type: 2}

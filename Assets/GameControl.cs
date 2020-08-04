@@ -40,7 +40,7 @@ public class GameControl : MonoBehaviour
     {
         foreach(Job j in jobs)
         {
-            j.assigned = new List<Worker>();
+            j.reset();
         }
         foreach(Worker w in workers)
         {

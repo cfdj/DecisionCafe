@@ -12,6 +12,8 @@ public class workerUI : MonoBehaviour
     public Text nameDisplay;
     public Text energyDisplay;
     public Text happyDisplay;
+    public Slider energyBar;
+    public Slider happyBar;
     public Button breakButton;
     public HourControl hourControl;
     public bool onbreak = false;
@@ -19,12 +21,15 @@ public class workerUI : MonoBehaviour
     public void updateDisplay()
     {
         nameDisplay.text = worker.name;
-        energyDisplay.text = "Energy: " + worker.Energy;
-        happyDisplay.text = "Happiness:" + worker.Happiness;
+        energyBar.value = worker.Energy;
+        happyBar.value = worker.Happiness;
         if(worker.assigned == off)
         {
+            energyBar.gameObject.SetActive(false);
+            happyBar.gameObject.SetActive(false);
             happyDisplay.text = "";
             energyDisplay.text = "Has been given the day off";
+            breakButton.gameObject.SetActive(false);
         }
     }
 
