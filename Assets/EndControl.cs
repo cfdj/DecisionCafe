@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EndControl : MonoBehaviour
 {
     [SerializeField] Job off;
+    public List<Text> hDisplays;
     public List<Worker> workers;
     public Canvas canvas;
     public Text revenueDisplay;
@@ -26,6 +27,19 @@ public class EndControl : MonoBehaviour
             {
                 numWorking += 1;
                 happiness += w.Happiness;
+            }
+        }
+        Worker c;
+        for(int i = 0; i < workers.Count; i++)
+        {
+            c = workers[i];
+            if (c.assigned != off)
+            {
+                hDisplays[i].text = c.name + ": +" + c.Happiness;
+            }
+            else
+            {
+                hDisplays[i].text = c.name + ": Not in work";
             }
         }
         wageTotal = wages*numWorking;

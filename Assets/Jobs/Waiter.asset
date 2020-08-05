@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Waiter
   initialbusyness: 2
-  busyness: 5
+  busyness: 2
   busynessChange: 5
   changeHour: 12
   revenue: 20
-  description: Gets very busy at lunch time.
-  assigned:
-  - {fileID: 11400000, guid: 6c6437403b6271d448d73463a616a09a, type: 2}
+  description: Gets very busy from 12:00.
+  assigned: []

@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cook
   initialbusyness: 4
-  busyness: 2
+  busyness: 4
   busynessChange: 2
   changeHour: 15
   revenue: 25
-  description: Very busy preparing food during the morning, gets quieter after lunchtime.
-  assigned:
-  - {fileID: 11400000, guid: 2b27e16a194ca724db7d8e2f7cfffde9, type: 2}
+  description: Very busy preparing food until 15:00
+  assigned: []

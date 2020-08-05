@@ -26,15 +26,15 @@ public class GameControl : MonoBehaviour
     public Text dislikesDisplay;
     public Text goodDisplay;
     public Text badDisplay;
+    public Text leftToAssign;
 
     public Canvas hour;
     public HourControl hourControl;
 
-    public Canvas endScreen;
-
     private int workerNum = 0;
     private int energy = 10;
     private int happiness = 5;
+    private int toAssign = 6;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +56,7 @@ public class GameControl : MonoBehaviour
         display.dislikesDisplay = dislikesDisplay;
         display.goodDisplay = goodDisplay;
         display.badDisplay = badDisplay;
+        leftToAssign.text = "Number of workers to assign: " + toAssign;
         setJobDisplay(job1, 0);
         setJobDisplay(job2, 1);
         setJobDisplay(job3, 2);
@@ -67,6 +68,8 @@ public class GameControl : MonoBehaviour
         if (workerNum < workers.Count)
         {
             display.SetWorker(workers[workerNum]);
+            leftToAssign.text = "Number of workers to assign: " + toAssign;
+            toAssign -= 1;
         }
         else
         {
