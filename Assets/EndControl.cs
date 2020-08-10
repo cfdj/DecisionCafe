@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 
 public class EndControl : MonoBehaviour
 {
+    [DllImport("__Internal")]
+    private static extern void Setvar(int val, int profit);
+
     [SerializeField] Job off;
     public List<Text> hDisplays;
     public List<Worker> workers;
@@ -46,6 +50,7 @@ public class EndControl : MonoBehaviour
         revenueTotal = revenue;
         profit = revenue - wages * numWorking;
         updateDisplay();
+        Setvar(happiness, profit);
     }
 
     public void updateDisplay()
